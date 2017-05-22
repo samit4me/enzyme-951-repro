@@ -34,6 +34,7 @@ export class FnTextInput extends Component {
 
 	props: {
 		style?: any,
+		id?: string,
 	};
 
 	textInput: TextInput;
@@ -46,7 +47,6 @@ export class FnTextInput extends Component {
 		return (
 			<TextInput
 				{...this.props}
-				id="textInput"
 				ref={e => (this.textInput = e)}
 				style={[styles.textInput, this.props.style]}
 				selectionColor="#00aa00"
@@ -59,4 +59,4 @@ export class FnTextInput extends Component {
 	}
 }
 
-FnTextInput.displayName = 'FnTextInput';
+// FnTextInput.displayName = 'FnTextInput';
